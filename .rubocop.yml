@@ -1,0 +1,12 @@
+require: rubocop-performance
+
+Metrics/LineLength:
+  Max: 150
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    # Using `[]` for string arrays instead of `()`, since normal arrays are
+    # indicated with `[]` not `()`.
+    '%w': '[]'
+    '%W': '[]'
+    '%i': '[]'

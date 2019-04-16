@@ -1,0 +1,23 @@
+<div class = "container" >
+  <div class = "row">
+
+    <% @user.todos.each do |f| %>
+
+      <div class = "col-md-3">
+      
+      <div class="card" style="width: 10rem;">
+        <%= image_tag('tick.png', class: 'card-img-top') %>
+      <div class="card-body">
+        <div class="text-center">
+          <h5 class="card-title"><%= f.title %> </h5>
+          <%= link_to "Show", user_todo_path(current_user, f),  class: "btn btn-primary" %>
+        </div>
+      </div>
+      </div>
+
+      </div>
+
+  <% end %>
+
+  </div>
+</div>
